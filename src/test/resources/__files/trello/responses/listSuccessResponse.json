@@ -1,0 +1,8 @@
+{
+  "id": "{{randomValue length=22 type='ALPHANUMERIC'}}",
+  "name": "{{request.query.name}}",
+  "closed": false,
+  "idBoard": "6327d15bb5b1dc04a91ee595",
+  "pos": "{{request.query.pos}}",
+  "limits": {}
+}
