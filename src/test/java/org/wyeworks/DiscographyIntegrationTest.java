@@ -29,10 +29,9 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.when;
 
-@RunWith(SpringRunner.class)
 @SpringBootTest
 @ActiveProfiles("test")
-class DiscographyIntegrationTest {
+public class DiscographyIntegrationTest {
 
     @MockBean
     SpotifyClient spotifyClientMock;

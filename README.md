@@ -28,6 +28,9 @@ Then you can run it:
 docker run --env-file ./.env discography
 ```
 
+## Final Result:
+![img.png](example-images/img.png)
+
 ---
 
 
