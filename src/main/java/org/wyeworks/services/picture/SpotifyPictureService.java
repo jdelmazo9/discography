@@ -7,7 +7,6 @@ import org.wyeworks.clients.SpotifyClient;
 import org.wyeworks.model.Album;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 @Slf4j
 @Component
@@ -26,7 +25,7 @@ public class SpotifyPictureService implements PictureService {
      * @return
      */
     public List<Album> getAlbumsWithPictures(List<Album> albums) {
-        
+
         return albums.parallelStream()
                 .map(album -> album.toBuilder().picture(spotifyClient.getAlbumPicture(album.getName())).build())
                 .toList();
